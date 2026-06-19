@@ -1,0 +1,65 @@
+# =========================
+# Build artifacts (C)
+# =========================
+bin/
+*.o
+*.out
+*.exe
+
+# =========================
+# SAT instance data
+# (usually huge, regenerated)
+# =========================
+instances/
+results/raw/
+
+# You MAY want to keep:
+# results/csv/ (final datasets)
+# results/plots/ (paper figures)
+
+# =========================
+# Python cache
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+.envrc/
+
+# =========================
+# OS junk
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Editor / IDE
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Solver binaries (optional)
+# If you build Kissat etc locally
+# =========================
+solvers/**/build/
+solvers/**/bin/
+
+# =========================
+# Large experiment outputs
+# (optional safety net)
+# =========================
+*.cnf
+*.sat
+*.out.txt
